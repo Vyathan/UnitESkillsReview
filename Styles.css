@@ -46,6 +46,7 @@ h2 {
    padding: 0 0.25em 0.25em;
    margin: 0;
    color: red;
+   text-shadow: 2px -1px 2px rgb(255,204,102);
 }
   
 /* main content */
@@ -62,6 +63,7 @@ article {
    padding: 0.5em;
    margin: 0.5em auto;
    text-align: center;
+   box-shadow: 3px 3px 0 #777;
 }
 .accent {
    font-weight: bold;
@@ -79,4 +81,18 @@ article p.firstparagraph:first-letter {
 footer {
    padding: 0.5em;
    text-align: center;
+}
+
+/* print styles */
+@media print {
+   body, h2, article {
+      color: #000;
+      background-color: #fff;
+   }
+   body {
+      max-width: 100%;
+   }
+@page {
+   margin: 1in;
+}
 }
