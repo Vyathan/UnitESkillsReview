@@ -19,6 +19,7 @@ html {
 
 /* body and container */
 body {
+   background-color: #ddd;
    max-width: 960px;
    margin: 0 auto;
 }
@@ -26,6 +27,9 @@ p {
    font-family: Arial, Helvetica, sans-serif;
    font-size: 1.6em;
    line-height: 1.4em;
+}
+div.container {
+   background-color: rgb(255,204,102);
 }
 
 /* headings */
@@ -46,10 +50,13 @@ h2 {
   
 /* main content */
 article {
+   background-color: #fff;
    margin: 1em;
    padding: 1em;
 }
 .contrastbox {
+   background-color: #ddd;
+   border: 1px solid #777;
    font-weight: bold;
    width: 30%;
    padding: 0.5em;
@@ -61,6 +68,11 @@ article {
 }
 .title {
    font-style: italic;
+}
+article p.firstparagraph:first-letter {
+   font-size: 3em;
+   line-height: 0.9em;
+   float: left;
 }
 
 /* footer section */
